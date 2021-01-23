@@ -5,7 +5,6 @@ const http = require("http");
 const url = require("url");
 
 // asyncronous call back method
-
 const replaceTemplate = (temp, product) => {
   let output = temp.replace(/{%PRODUCTNAME%}/g, product.productName);
   output = output.replace(/{%IMAGE%}/g, product.image);
